@@ -1,1 +1,1 @@
-# rehab_pilates
+리햅 필라테스 스튜디오
