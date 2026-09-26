@@ -98,6 +98,40 @@ section{padding:72px 0}
   .hero .hero-img img{height:360px !important;}
 }
 
+
+/* ===== ABOUT IMAGE SIZE OVERRIDE ===== */
+#about .story-grid{
+  align-items:center !important;
+}
+#about .story-img{
+  align-self:center !important;
+  margin-top:50px !important;
+  margin-bottom:50px !important;
+  max-height:520px !important;
+  border-radius:28px !important;
+  overflow:hidden !important;
+}
+#about .story-img img{
+  width:100% !important;
+  height:520px !important;
+  object-fit:cover !important;
+  object-position:center !important;
+}
+@media (max-width:900px){
+  #about .story-img{
+    margin-top:0 !important;
+    margin-bottom:20px !important;
+    max-height:440px !important;
+  }
+  #about .story-img img{
+    height:440px !important;
+  }
+}
+@media (max-width:520px){
+  #about .story-img{max-height:340px !important;}
+  #about .story-img img{height:340px !important;}
+}
+
 </style>
 </head>
 <body>
