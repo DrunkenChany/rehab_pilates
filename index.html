@@ -480,6 +480,46 @@ html, body{
   }
 }
 
+
+/* PC contact title: keep "RE:HAB에서 시작하세요" on one line */
+@media(min-width:701px){
+  .contact-title span:last-child{
+    white-space:nowrap !important;
+    width:max-content;
+    max-width:none;
+    font-size:clamp(30px,3vw,46px);
+    letter-spacing:-.045em;
+  }
+}
+
+
+/* FINAL mobile hero title override */
+@media(max-width:700px){
+  .desktop-hero-title{display:none !important;}
+  .mobile-hero-title{
+    display:block !important;
+    font-size:clamp(25px,6.7vw,32px) !important;
+    line-height:1.28 !important;
+    letter-spacing:-.055em !important;
+  }
+  .mobile-hero-title > span{
+    display:block !important;
+    white-space:nowrap !important;
+  }
+  .mobile-hero-title .mobile-hero-black{
+    color:#111 !important;
+    background:none !important;
+    -webkit-text-fill-color:#111 !important;
+  }
+  .mobile-hero-title .mobile-hero-orange{
+    color:#ef5d00 !important;
+    background:linear-gradient(120deg,#ef5d00,#ff9b3d);
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -494,7 +534,10 @@ html, body{
 <div class="eyebrow">RE:HAB PILATES STUDIO · ECOCITY</div>
 <h1>
 <span class="desktop-hero-title"><span class="hero-first-line">치료 이후의 일상까지,</span><br><em class="keep-line">몸을 이해하는 필라테스</em></span>
-<span class="mobile-hero-title"><em>몸을 이해하는</em><br><em>필라테스</em></span>
+<span class="mobile-hero-title">
+  <span class="mobile-hero-black">치료이후의 일상까지,</span>
+  <span class="mobile-hero-orange">몸을 이해하는 필라테스</span>
+</span>
 </h1>
 <p class="hero-copy">물리치료사의 임상 경험을 바탕으로 몸의 움직임과 자세를 세심하게 살피는 맞춤형 필라테스 스튜디오입니다. 단순히 동작을 따라 하는 운동이 아니라, 내 몸을 이해하고 더 나은 움직임을 일상으로 연결합니다.</p>
 <div class="hero-points"><span>물리치료사 원장 직강</span><span>1:1 · 2:1 · 4:1 맞춤 레슨</span><span>재활 중심 움직임</span></div>
