@@ -29,6 +29,7 @@ header.scrolled{background:rgba(255,255,255,.92);backdrop-filter:blur(18px);box-
 .hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:64px;align-items:center}
 .eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(243,107,19,.18);background:rgba(255,255,255,.78);padding:8px 13px;border-radius:999px;color:var(--orange);font-size:12px;font-weight:800;letter-spacing:.12em}
 .eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--orange)}
+.hero-first-line{white-space:nowrap;display:inline-block}
 h1{font-size:clamp(48px,6vw,82px);line-height:1.06;letter-spacing:-.06em;margin-top:23px} h1 em{font-style:normal;color:transparent;background:linear-gradient(120deg,#ef5d00,#ff9b3d);background-clip:text;-webkit-background-clip:text}
 .hero-copy{font-size:clamp(16px,1.45vw,19px);color:#5e5e5e;max-width:630px;margin-top:26px}
 .hero-points{display:flex;gap:18px;flex-wrap:wrap;margin-top:23px;font-size:13px;font-weight:800}.hero-points span:before{content:"✓";color:var(--orange);margin-right:6px}
@@ -85,10 +86,10 @@ h2{font-size:clamp(34px,4vw,53px);line-height:1.2;letter-spacing:-.045em}.sectio
 
 /* FOOTER / FLOAT */
 footer{background:#151515;color:#888;padding:38px 50px}.footer{max-width:1240px;margin:auto;display:flex;justify-content:space-between;gap:30px;font-size:12px}.footer strong{display:block;color:#fff;font-size:16px;margin-bottom:4px}.footer-right{text-align:right}
-.floating-call{position:fixed;z-index:80;right:24px;bottom:24px;background:linear-gradient(135deg,#ef5d00,#ff9436);color:#fff;padding:14px 19px;border-radius:999px;font-size:13px;font-weight:800;box-shadow:0 12px 30px rgba(0,0,0,.2)}
+
 
 @media(max-width:1000px){.hero-grid,.story-grid,.promo-wrap,.philosophy-inner,.visit-grid{grid-template-columns:1fr}.hero-photo{height:520px}.program-grid{grid-template-columns:repeat(2,1fr)}.trust-grid{grid-template-columns:1fr 1fr;padding:22px 0}.trust-title{grid-column:1/-1}.trust-item{border-left:0;padding:14px 0}.section-head{display:block}.section-desc{margin-top:16px}}
-@media(max-width:700px){.shell,header{padding-left:22px;padding-right:22px}.menu a:not(.nav-cta){display:none}section.block{padding-top:78px;padding-bottom:78px}.hero{padding-top:110px}.hero-photo{height:420px;border-radius:28px}.float-card{right:8px}.program-grid{grid-template-columns:1fr}.story-img{height:380px}.gallery{grid-template-columns:1fr;grid-auto-rows:260px}.gallery figure{grid-column:auto!important;grid-row:auto!important}.logo-card img{height:auto;max-height:280px}footer{padding-left:22px;padding-right:22px}.footer{display:block}.footer-right{text-align:left;margin-top:18px}}
+@media(max-width:700px){.hero-first-line{font-size:.82em}.shell,header{padding-left:22px;padding-right:22px}.menu a:not(.nav-cta){display:none}section.block{padding-top:78px;padding-bottom:78px}.hero{padding-top:110px}.hero-photo{height:420px;border-radius:28px}.float-card{right:8px}.program-grid{grid-template-columns:1fr}.story-img{height:380px}.gallery{grid-template-columns:1fr;grid-auto-rows:260px}.gallery figure{grid-column:auto!important;grid-row:auto!important}.logo-card img{height:auto;max-height:280px}footer{padding-left:22px;padding-right:22px}.footer{display:block}.footer-right{text-align:left;margin-top:18px}}
 </style>
 </head>
 <body>
@@ -101,7 +102,7 @@ footer{background:#151515;color:#888;padding:38px 50px}.footer{max-width:1240px;
 <section class="hero shell" id="home"><div class="container hero-grid">
 <div class="reveal">
 <div class="eyebrow">RE:HAB PILATES STUDIO · ECOCITY</div>
-<h1>치료 이후의 일상까지,<br><em>몸을 이해하는 필라테스</em></h1>
+<h1><span class="hero-first-line">치료 이후의 일상까지,</span><br><em>몸을 이해하는 필라테스</em></h1>
 <p class="hero-copy">물리치료사의 임상 경험을 바탕으로 몸의 움직임과 자세를 세심하게 살피는 맞춤형 필라테스 스튜디오입니다. 단순히 동작을 따라 하는 운동이 아니라, 내 몸을 이해하고 더 나은 움직임을 일상으로 연결합니다.</p>
 <div class="hero-points"><span>물리치료사 원장 직강</span><span>1:1 · 2:1 · 4:1 맞춤 레슨</span><span>재활 중심 움직임</span></div>
 <div class="actions"><a class="btn primary" href="tel:0507-1476-5856">상담 전화 0507-1476-5856</a><a class="btn secondary" href="https://map.naver.com/p/search/%EB%A6%AC%ED%96%85%20%ED%95%84%EB%9D%BC%ED%85%8C%EC%8A%A4%20%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4" target="_blank" rel="noopener">네이버 지도 →</a></div>
@@ -174,7 +175,7 @@ footer{background:#151515;color:#888;padding:38px 50px}.footer{max-width:1240px;
 </main>
 
 <footer><div class="footer"><div><strong>RE:HAB PILATES STUDIO</strong>치료 이후의 일상까지 생각하는 맞춤형 필라테스</div><div class="footer-right">전북 전주시 덕진구 세병1길 8 403호 · 0507-1476-5856<br>© <span id="year"></span> RE:HAB PILATES STUDIO. All rights reserved.</div></div></footer>
-<a class="floating-call" href="tel:0507-1476-5856">☎ 상담하기</a>
+
 
 <script>
 const header=document.getElementById('header');
