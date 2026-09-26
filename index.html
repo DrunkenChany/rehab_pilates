@@ -11,14 +11,16 @@
 <meta property="og:url" content="https://drunkenchany.github.io/rehab_pilates/">
 <meta property="og:title" content="RE:HAB PILATES STUDIO | 리햅 필라테스 스튜디오">
 <meta property="og:description" content="치료 이후의 일상까지 생각하는 맞춤형 필라테스">
-<meta property="og:image" content="https://drunkenchany.github.io/rehab_pilates/logo2.png">
-<meta property="og:image:secure_url" content="https://drunkenchany.github.io/rehab_pilates/logo2.png">
+<meta property="og:image" content="https://drunkenchany.github.io/rehab_pilates/logo2_kakao.png">
+<meta property="og:image:secure_url" content="https://drunkenchany.github.io/rehab_pilates/logo2_kakao.png">
 <meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="600">
 <meta property="og:image:alt" content="RE:HAB PILATES STUDIO 로고 및 프로그램 안내">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="RE:HAB PILATES STUDIO | 리햅 필라테스 스튜디오">
 <meta name="twitter:description" content="치료 이후의 일상까지 생각하는 맞춤형 필라테스">
-<meta name="twitter:image" content="https://drunkenchany.github.io/rehab_pilates/logo2.png">
+<meta name="twitter:image" content="https://drunkenchany.github.io/rehab_pilates/logo2_kakao.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -310,6 +312,42 @@ footer{background:#151515;color:#888;padding:38px 50px}.footer{max-width:1240px;
   .map-card{padding:34px 22px;min-height:360px}
 }
 
+
+/* Mobile horizontal overflow fix */
+html, body{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden;
+}
+@media(max-width:700px){
+  body{margin:0;}
+  .shell,
+  .container,
+  section,
+  header,
+  footer{
+    max-width:100%;
+    box-sizing:border-box;
+  }
+  img, video, iframe{
+    max-width:100%;
+  }
+  .visit-grid,
+  .hero-grid,
+  .program-grid,
+  .space-grid{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+  }
+  .visit-grid > *,
+  .hero-grid > *,
+  .program-grid > *,
+  .space-grid > *{
+    min-width:0;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -409,10 +447,6 @@ footer{background:#151515;color:#888;padding:38px 50px}.footer{max-width:1240px;
 const header=document.getElementById('header');
 window.addEventListener('scroll',()=>header.classList.toggle('scrolled',window.scrollY>20));
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.1});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-document.getElementById('year').textContent=new Date().getFullYear();
-</script>
-</body></html>st io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.1});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 document.getElementById('year').textContent=new Date().getFullYear();
 </script>
